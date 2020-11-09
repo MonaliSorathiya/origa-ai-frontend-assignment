@@ -26,14 +26,14 @@ h1{
 
 .fl-table {
     border-radius: 15px;
-    font-size: 12px;
+    font-size: 20px;
     font-weight: normal;
     border: none;
     border-collapse: collapse;
-    margin-left: 25%;
-    width: 50%;    
+    width: 100%;
+    max-width: 100%;
     white-space: nowrap;
-    background-color: gray;
+    background-color:gray;
 }
 
 .fl-table td, .fl-table th {
