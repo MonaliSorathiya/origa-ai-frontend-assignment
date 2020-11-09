@@ -13,13 +13,18 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { DashboardComponent } from './Data-Table/dashboard/dashboard.component';
 import { FilterDataComponent } from './Data-Table/filter-data/filter-data.component';
-import { UserDataService } from './user-data.service'
+import { UserDataService } from './user-data.service';
+import { RepresentationDataComponent } from './Pie-Chart/representation-data/representation-data.component'
+import { ChartsModule } from 'ng2-charts';
+import { TotalUserComponent } from './Percentage/total-user/total-user.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
-    FilterDataComponent
+    FilterDataComponent,
+    RepresentationDataComponent,
+    TotalUserComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +36,11 @@ import { UserDataService } from './user-data.service'
     MatInputModule,
     MatAutocompleteModule,
     MatChipsModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    ChartsModule
+    
+    
+    
   ],
   providers: [
     UserDataService

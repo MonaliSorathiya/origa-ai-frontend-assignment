@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { IUser } from './users';
 import { Observable } from 'rxjs';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
@@ -18,6 +18,7 @@ export class UserDataService {
   getPosts(): Observable<IUser[]> {
     return this.http.get<IUser[]>(this.postUrl);
   }
+  
 
   filteredListOptions() {
     let filteredData = this.dictionaryData;

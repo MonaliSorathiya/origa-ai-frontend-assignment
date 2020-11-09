@@ -30,10 +30,10 @@ h1{
     font-weight: normal;
     border: none;
     border-collapse: collapse;
-    width: 100%;
-    max-width: 100%;
+    margin-left: 25%;
+    width: 50%;    
     white-space: nowrap;
-    background-color:white;
+    background-color: gray;
 }
 
 .fl-table td, .fl-table th {
@@ -43,7 +43,8 @@ h1{
 
 .fl-table td {
     border-right: 1px solid #f8f8f8;
-    font-size: 12px;
+    font-size: 20px;
+    font-weight: bolder;
 }
 
 .fl-table thead th {
