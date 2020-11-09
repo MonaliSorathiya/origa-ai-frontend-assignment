@@ -1,0 +1,28 @@
+<!-- search bar -->
+<div style="margin:auto; width: 70%; margin-top: 30px;">
+    <app-filter-data (onSelectedOption)="onSelectedOption($event)"></app-filter-data>
+</div>
+
+<!-- Data Table -->
+<div class="table-wrapper">
+    <table class="fl-table">
+        <tr>
+            <th>S No</th>
+            <th>Name</th>
+            <th>Username</th>
+            <th>City</th>
+            <th>Pincode</th>
+            <th>Company Name</th>
+        </tr>
+
+        <tr *ngFor="let filteredData of dictionary">
+            <td>{{filteredData.id}}</td>
+            <td>{{filteredData.name}}</td>
+            <td>{{filteredData.username}}</td>
+            <td>{{filteredData.address.city}}</td>
+            <td>{{filteredData.address.zipcode}}</td>
+            <td>{{filteredData.company.name}}</td>
+        </tr>
+    </table>
+
+</div>
