@@ -1,9 +1,8 @@
 import { global } from '@angular/compiler/src/util';
 import { Component, OnInit } from '@angular/core';
 import * as Chart from 'chart.js';
-import { Colors } from 'ng2-charts';
-import { UserDataService } from 'src/app/user-data.service';
-import { IUser } from 'src/app/users';
+import { IUser } from '../../users';
+import { UserDataService } from '../../user-data.service';
 
 @Component({
   selector: 'app-representation-data',

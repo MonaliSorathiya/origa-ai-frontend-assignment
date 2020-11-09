@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { UserDataService } from 'src/app/user-data.service';
-import { IUser } from 'src/app/users';
+import { IUser } from '../../users';
+import { UserDataService } from '../../user-data.service';
 
 @Component({
   selector: 'app-total-user',
@@ -9,7 +9,7 @@ import { IUser } from 'src/app/users';
 })
 export class TotalUserComponent implements OnInit {
   dictionary: IUser[];
-  
+
   constructor(
     private userdataService: UserDataService
   ) { }

@@ -1,6 +1,10 @@
-# OrigaAiFrontendAssignment
+# Front End Developer Assignment
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.3.
+
+## Demo
+You can see the demo of the examples in [Stackblitz](https://stackblitz.com/github.com/MonaliSorathiya/Angular-Searching-and-Displaying-API-Data).
+
 
 ## Development server
 
