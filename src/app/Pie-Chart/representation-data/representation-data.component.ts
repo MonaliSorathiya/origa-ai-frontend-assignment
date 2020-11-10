@@ -18,7 +18,7 @@ export class RepresentationDataComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.userdataService.getPosts().subscribe(options => {
+    this.userdataService.getUsers().subscribe(options => {
       this.dictionary = options     
     });
     this.pie = new Chart('pie',{

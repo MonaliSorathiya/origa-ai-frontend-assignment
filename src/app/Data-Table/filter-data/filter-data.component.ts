@@ -22,7 +22,7 @@ export class FilterDataComponent implements OnInit {
     public userdataService: UserDataService) { }
 
   ngOnInit() {
-    this.userdataService.getPosts().subscribe(filteredData => {
+    this.userdataService.getUsers().subscribe(filteredData => {
       this.allUsers = filteredData
     });
 

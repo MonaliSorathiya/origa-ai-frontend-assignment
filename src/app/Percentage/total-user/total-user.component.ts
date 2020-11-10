@@ -15,7 +15,7 @@ export class TotalUserComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.userdataService.getPosts().subscribe(filteredData => {
+    this.userdataService.getUsers().subscribe(filteredData => {
       this.dictionary = filteredData
     });
   }

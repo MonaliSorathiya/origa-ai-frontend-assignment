@@ -9,16 +9,15 @@ export class UserDataService {
 
   searchOption = [];
 
-  public dictionaryData: IUser[]
+  dictionaryData: IUser[]
 
-  postUrl: string = "https://jsonplaceholder.typicode.com/users";
+  getUrl: string = "https://jsonplaceholder.typicode.com/users";
 
   constructor(private http: HttpClient) { }
 
-  getPosts(): Observable<IUser[]> {
-    return this.http.get<IUser[]>(this.postUrl);
-  }
-  
+  getUsers(): Observable<IUser[]> {
+    return this.http.get<IUser[]>(this.getUrl);
+  }  
 
   filteredListOptions() {
     let filteredData = this.dictionaryData;
